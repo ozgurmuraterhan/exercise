@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Mulish:wght@500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css");
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fontMontserrat{
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fontMulish{
+  font-family: 'Mulish', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+    background: linear-gradient( 0deg , #081221, #081221);
+    font-family: 'Mulish', sans-serif;
+    color:#c1d1e8;
+    font-size: 10pt;
+}
+
+
+.navlink{
+  font-size: 20pt;
+  margin:10px 22px;
+  float:left;
+  position: relative;
+  
+  
+}
+
+.navlink span{ 
+  color: #ffffff;
+  opacity: 0.1;
+  font-size: 40pt;
+  top: -35px;
+  margin-bottom: -28px;
+  position: absolute;
+  left: -32px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.card_panel_bg{ 
+  background-color: #0e1a2b;
+}
+
+.heading_button_label_text{
+  color:#ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.input_bg{
+  background-color: #182c47 ;
+}
+
+.button_bg{
+ background-color: #5692e8 ;
+}
+
+.select{
+  color:#ffffff;
+  border:0;
+  border-radius: 0;
+}
+
+.css-4ljt47-MenuList {
+  padding:0px!important
+}
+
+.css-26l3qy-menu {
+ margin-top: 0!important;
+ width: 84%!important;
+ right: 0;
+}
+ 
+
+.select div{
+  background-color: #182c47!important; 
+  border:0;
+  color:#c1d1e8 
+
+}
+
+.select div:active{ 
+  color:#ffffff 
+
+}
+
+.select div:hover{ 
+  color:#ffffff 
+}
+
+.form-control,.form-control:focus{
+  color:#c1d1e8 ; 
+  background-color: #182c47; 
+  border:0;
+  border-radius: 0;
+  font-size: 10pt;
+  font-family: 'Montserrat', sans-serif;
+
+} 
+
+.rotate{
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  float: left;
+  position: relative;
+  z-index: 9;
+  background-color: #5692e8 ;
+  border:0;
+  border-radius:0;
+}
+
+.rotate:active,.rotate:focus,.rotate:hover{
+  background-color: #5692e8 ;
+}
+
+.clear_btn{
+  font-size: 10pt;
+  background-color: #5692e8 ;
+  border-radius: 0;
+  color:#fff;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 27px;
+
+
+}
+
+.rotate_down{
+  transform: rotate(0deg);
+}
+.rotate_up{
+  transform: rotate(180deg);
+}
+
+label{ 
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+
+}
+.row_item{ position: relative; margin-bottom:30px}
+.row_item span{
+  position: absolute;
+  right: 20px;
+  top:50px;
+  background-color:#182c47 ;
+  padding: 5px 12px;
+  border-radius:50%;
+  z-index: 9;
+  background-color: #5692e8;
+  font-size: 12pt;
+  font-weight: bold;
+
+}
+
+.row_item .item_box{
+  background-color: #0e1a2b;
+  padding:20px 30px;
+}
+
+.row_item .item_box h1{
+  font-size: 15pt;
+  color:#fff;
+  margin-bottom: 10px;
+
+}
+
+.row_item .item_box h6{
+
+  font-size:10pt;
+  margin-top:-10px
+
+}
+
+.row_item .item_box div{
+  margin-top: 10px;
+
+}
+
+.row_item  .img_area{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;  
+
+}
+.row_item  .img_area .img{
+  min-height: 140px;
+  background-color: #000;
+  width: 100%;
+  float: left;
+
+}
+label span{
+  color:#5692e8;
+  margin-left: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.css-1okebmr-indicatorSeparator{
+  display: none;
 }
