@@ -13,6 +13,7 @@ function App() {
   let history = createBrowserHistory();
   const [state, setState] = useState({ videoGames: true, contact: false })
 
+  console.log(state)
   return (
     <Router>
       <Container>
@@ -20,11 +21,11 @@ function App() {
           <Col>
             <Link to="/videoGames" className="navlink heading_button_label_text" onClick={() => setState({ videoGames: true, contact: false })} >
               VIDEO GAMES
-                <span className={history.location.pathname == "/videoGames" || state.videoGames == "/videoGames" ? "d-block" : "d-none"}>VIDEO GAMES</span>
+                <span className={history.location.pathname == "/videoGames" || state.videoGames ? "d-block" : "d-none"}>VIDEO GAMES</span>
             </Link>
             <Link to="/contact" className="navlink heading_button_label_text" onClick={() => setState({ videoGames: false, contact: true })}>
               CONTACT
-                <span className={history.location.pathname == "/contact" || state.contact == "/contact" ? "d-block" : "d-none"}>CONTACT</span>
+                <span className={history.location.pathname == "/contact" || state.contact ? "d-block" : "d-none"}>CONTACT</span>
             </Link>
           </Col>
         </Row>
